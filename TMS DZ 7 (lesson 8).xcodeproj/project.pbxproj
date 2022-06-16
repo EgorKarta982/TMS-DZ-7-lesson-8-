@@ -13,6 +13,9 @@
 		74D79E13285951960031B678 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D79E11285951960031B678 /* Main.storyboard */; };
 		74D79E15285951970031B678 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D79E14285951970031B678 /* Assets.xcassets */; };
 		74D79E18285951970031B678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D79E16285951970031B678 /* LaunchScreen.storyboard */; };
+		74D79E20285953CD0031B678 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79E1F285953CD0031B678 /* SecondViewController.swift */; };
+		74D79E22285958A70031B678 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D79E21285958A70031B678 /* ThirdViewController.swift */; };
+		74FEA301285A1EFC0008DF1D /* FoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FEA300285A1EFC0008DF1D /* FoursViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		74D79E14285951970031B678 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74D79E17285951970031B678 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74D79E19285951970031B678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74D79E1F285953CD0031B678 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		74D79E21285958A70031B678 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		74FEA300285A1EFC0008DF1D /* FoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoursViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		74D79E0A285951960031B678 /* TMS DZ 7 (lesson 8) */ = {
 			isa = PBXGroup;
 			children = (
+				74FEA2FD285A1C940008DF1D /* controllers */,
+				74FEA302285A228C0008DF1D /* SB */,
 				74D79E0B285951960031B678 /* AppDelegate.swift */,
 				74D79E0D285951960031B678 /* SceneDelegate.swift */,
-				74D79E0F285951960031B678 /* ViewController.swift */,
-				74D79E11285951960031B678 /* Main.storyboard */,
 				74D79E14285951970031B678 /* Assets.xcassets */,
 				74D79E16285951970031B678 /* LaunchScreen.storyboard */,
 				74D79E19285951970031B678 /* Info.plist */,
 			);
 			path = "TMS DZ 7 (lesson 8)";
+			sourceTree = "<group>";
+		};
+		74FEA2FD285A1C940008DF1D /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				74D79E0F285951960031B678 /* ViewController.swift */,
+				74D79E1F285953CD0031B678 /* SecondViewController.swift */,
+				74D79E21285958A70031B678 /* ThirdViewController.swift */,
+				74FEA300285A1EFC0008DF1D /* FoursViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		74FEA302285A228C0008DF1D /* SB */ = {
+			isa = PBXGroup;
+			children = (
+				74D79E11285951960031B678 /* Main.storyboard */,
+			);
+			path = SB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +163,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D79E20285953CD0031B678 /* SecondViewController.swift in Sources */,
 				74D79E10285951960031B678 /* ViewController.swift in Sources */,
+				74D79E22285958A70031B678 /* ThirdViewController.swift in Sources */,
 				74D79E0C285951960031B678 /* AppDelegate.swift in Sources */,
+				74FEA301285A1EFC0008DF1D /* FoursViewController.swift in Sources */,
 				74D79E0E285951960031B678 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +332,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +360,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
