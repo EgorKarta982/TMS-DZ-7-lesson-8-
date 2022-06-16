@@ -4,10 +4,13 @@ import UIKit
 class SecondViewController: UIViewController {
  
     var secondVcText = "2"
+    var secondBud = Beer(name: "", price: 0, color: "")
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(secondVcText)
+        print(secondBud.name, secondBud.price, secondBud.color)
     }
     
     @IBAction func backButtonPresed(_ sender: UIButton) {

@@ -4,6 +4,7 @@ import UIKit
 class ViewController: UIViewController {
     
     let text = "Something Text To FoursVC"
+    let bud = Beer(name: "Bud", price: 5, color: "White")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -13,6 +14,7 @@ class ViewController: UIViewController {
     @IBAction func secondVcButtonPressed(_ sender: UIButton) {
         let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
         secondVC.secondVcText = self.text
+        secondVC.secondBud = self.bud
         secondVC.modalPresentationStyle = .fullScreen
         secondVC.modalTransitionStyle = .flipHorizontal
         self.present(secondVC, animated: true)
