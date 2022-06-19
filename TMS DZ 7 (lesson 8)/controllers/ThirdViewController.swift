@@ -2,15 +2,18 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
+    @IBOutlet var thirdLabet: UILabel!
     var thirdVcText = "3"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(thirdVcText)
+        thirdLabet.text = thirdVcText
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
-        self.dismiss(animated: true)
+        self.navigationController?.popToRootViewController(animated: true)
+        
     }
     
     @IBAction func foursVCButtonPressed(_ sender: UIButton) {

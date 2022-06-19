@@ -14,16 +14,17 @@ class SecondViewController: UIViewController {
     }
     
     @IBAction func backButtonPresed(_ sender: UIButton) {
-        self.dismiss(animated: true)
+        self.navigationController?.popViewController(animated: true)
+        
+//        self.navigationController?.popToRootViewController(animated: true)
         
     }
+    
     @IBAction func thirdVcButtonPressed(_ sender: UIButton) {
         let thirdVC = self.storyboard?.instantiateViewController(withIdentifier: "ThirdViewController")
         as! ThirdViewController
         thirdVC.thirdVcText = self.secondVcText
-        thirdVC.modalTransitionStyle = .flipHorizontal
-        thirdVC.modalPresentationStyle = .fullScreen
-        self.present(thirdVC, animated: true)
+        self.navigationController?.pushViewController(thirdVC, animated: true)
     }
     
 }

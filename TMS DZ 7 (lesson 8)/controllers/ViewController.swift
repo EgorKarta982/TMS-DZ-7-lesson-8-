@@ -15,9 +15,8 @@ class ViewController: UIViewController {
         let secondVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
         secondVC.secondVcText = self.text
         secondVC.secondBud = self.bud
-        secondVC.modalPresentationStyle = .fullScreen
-        secondVC.modalTransitionStyle = .flipHorizontal
-        self.present(secondVC, animated: true)
+       
+        self.navigationController?.pushViewController(secondVC, animated: true)
     }
     
     

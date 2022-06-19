@@ -13,5 +13,8 @@ class FoursViewController: UIViewController {
     
     }
     
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        self.dismiss(animated: true)
+    }
     
 }
